@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+# 🍕 Fast React Pizza Co. — Pizza Ordering App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> The best pizza. Straight out of the oven, straight to you.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Screenshots
 
-### `npm start`
+### 🏠 Home — Enter Your Name
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-home.png" width="900" alt="Home Page" />
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 🍕 Menu
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-menu.png" width="900" alt="Pizza Menu" />
+</p>
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛒 Menu — Items Added to Cart
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-menu-cart.png" width="900" alt="Menu with Cart Items" />
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🧾 Cart
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-cart.png" width="900" alt="Cart Page" />
+</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 📋 Order Form
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-order-form.png" width="900" alt="Order Form" />
+</p>
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 📋 Order Form — Filled
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-order-form-filled.png" width="900" alt="Order Form Filled" />
+</p>
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### ✅ Order Status
 
-### Analyzing the Bundle Size
+<p align="center">
+  <img src="./screenshots/pizza-screenshot-order-status.png" width="900" alt="Order Status" />
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📌 Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Fast React Pizza Co.** is a fast and minimal pizza ordering web application where users can browse the menu, add items to their cart, place an order with delivery details, and track their order status in real time using an order ID.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✨ Features
 
-### Deployment
+### 🏠 Home
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- User enters their name to get started — no login or account required
+- Name is stored in Redux and used throughout the app
 
-### `npm run build` fails to minify
+### 🍕 Menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fetches pizza menu from an API
+- Displays pizza name, ingredients, price, and photo
+- Sold out items are clearly marked and disabled
+- Add to cart button per item
+- Quantity controls (+ / −) and delete button for items already in cart
+- Sticky bottom bar showing total pizzas & price with **Open Cart** button
+
+### 🛒 Cart
+
+- Lists all selected pizzas with quantity controls and delete buttons
+- **Order Pizzas** button to proceed to checkout
+- **Clear Cart** button to remove all items
+
+### 📋 Order Form
+
+- Pre-filled first name from Redux state
+- Phone number & delivery address fields
+- **Get Position** button — auto-fills address using GPS geolocation
+- Priority order toggle (adds 20% surcharge)
+- Displays total price dynamically before placing order
+
+### ✅ Order Status
+
+- Shows order ID, status badges (**Priority** / **Preparing Order**)
+- Estimated delivery countdown timer
+- Full breakdown: pizzas ordered, price, priority surcharge, total to pay on delivery
+
+### 🔍 Search Orders
+
+- Search any order by ID from the top navigation bar
+
+---
+
+## 🛠️ Tech Stack
+
+| Category         | Technology             |
+| ---------------- | ---------------------- |
+| Framework        | React 18               |
+| Build Tool       | Vite                   |
+| Routing          | React Router DOM v6    |
+| State Management | Redux Toolkit          |
+| React-Redux      | React Redux v9         |
+| Styling          | Tailwind CSS v3        |
+| CSS Processing   | PostCSS + Autoprefixer |
+| Code Formatting  | Prettier               |
+| Linting          | ESLint                 |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/MoamenElfateh/fast-react-pizza.git
+
+# Navigate into the project
+cd fast-react-pizza
+
+# Install dependencies
+npm install
+```
+
+### Running the App
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── features/
+│   ├── cart/         # Cart slice, cart UI components
+│   ├── menu/         # Menu fetching, pizza list & item
+│   ├── order/        # Order form, order status, search
+│   └── user/         # User name input, user Redux slice
+├── services/         # API calls (menu, orders)
+├── ui/               # Shared UI components (Header, Loader, etc.)
+└── utils/            # Helper functions
+```
+
+---
+
+## 👨‍💻 Author
+
+**Moamen Mohamed Elfateh**
+
+- 📧 moamenelfateh2@gmail.com
+- 🔗 [LinkedIn](https://linkedin.com/in/moamen-mohamed-elfateh)
+- 🐙 [GitHub](https://github.com/MoamenElfateh)
+- 📍 Suez, Egypt
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
